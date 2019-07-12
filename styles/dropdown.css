@@ -1,0 +1,111 @@
+.dropdown {
+    position: absolute;
+    z-index: 10;
+    border-radius: 2px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.dropdown-wrap {
+    top: 0;
+    height: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.dropdown.default {
+    border: 1px solid rgba(31, 32, 65, .25);
+}
+
+.dropdown.default .dropdown-body {
+    height: 0;
+    display: none;
+}
+
+.dropdown.default .dropdown-input {
+    border-bottom: none;
+}
+
+.dropdown.extended {
+    border: 1px solid rgba(31, 32, 65, .5);
+}
+
+.dropdown-input {
+    width: 100%;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.dropdown-body {
+    z-index: 2;
+    transition: .2s;
+    padding: 7px 7px 7px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.dropdown-option + .dropdown-option {
+    margin-top: 7px;
+}
+
+.option-title {
+    font: bold 12px Montserrat;
+    text-transform: uppercase;
+}
+
+.option-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    border: 1px solid rgba(31, 32, 65, .5);
+    color: 1px solid rgba(31, 32, 65, .5);
+    font: bold 12px Montserrat;
+    line-height: 30px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.option-btn.disabled {
+    border: 1px solid rgba(31, 32, 65, .25);
+    color: 1px solid rgba(31, 32, 65, .25);
+}
+
+.option-amount {
+    width: 32px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.dropdown-confirm div {
+    font: bold 12px Montserrat;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.dropdown-clear {
+    color: rgba(31, 32, 65, .5);
+}
+
+.dropdown-apply {
+    color: #BC9CFF;
+}
